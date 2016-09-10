@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Full name:</strong>
+  <%= @pupil.full_name %>
+</p>
+
+<p>
+  <strong>Father name:</strong>
+  <%= @pupil.father_name %>
+</p>
+
+<p>
+  <strong>Father phone number:</strong>
+  <%= @pupil.father_phone_number %>
+</p>
+
+<p>
+  <strong>Mother name:</strong>
+  <%= @pupil.mother_name %>
+</p>
+
+<p>
+  <strong>Mother phone number:</strong>
+  <%= @pupil.mother_phone_number %>
+</p>
+
+<p>
+  <strong>Class room:</strong>
+  <%= @pupil.class_room_id %>
+</p>
+
+<%= link_to 'Edit', edit_pupil_path(@pupil) %> |
+<%= link_to 'Back', pupils_path %>

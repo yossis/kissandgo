@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Class room:</strong>
+  <%= @duty.class_room_id %>
+</p>
+
+<p>
+  <strong>Start date:</strong>
+  <%= @duty.start_date %>
+</p>
+
+<p>
+  <strong>End date:</strong>
+  <%= @duty.end_date %>
+</p>
+
+<p>
+  <strong>Parents in duty:</strong>
+  <%= @duty.parents_in_duty %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @duty.user_id %>
+</p>
+
+<%= link_to 'Edit', edit_duty_path(@duty) %> |
+<%= link_to 'Back', duties_path %>

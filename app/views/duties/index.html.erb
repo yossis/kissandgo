@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Duties</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Class room</th>
+      <th>Start date</th>
+      <th>End date</th>
+      <th>Parents in duty</th>
+      <th>User</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @duties.each do |duty| %>
+      <tr>
+        <td><%= duty.class_room_id %></td>
+        <td><%= duty.start_date %></td>
+        <td><%= duty.end_date %></td>
+        <td><%= duty.parents_in_duty %></td>
+        <td><%= duty.user_id %></td>
+        <td><%= link_to 'Show', duty %></td>
+        <td><%= link_to 'Edit', edit_duty_path(duty) %></td>
+        <td><%= link_to 'Destroy', duty, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Duty', new_duty_path %>

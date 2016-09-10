@@ -1,0 +1,19 @@
+# == Schema Information
+#
+# Table name: class_rooms
+#
+#  id         :integer          not null, primary key
+#  school_id  :integer
+#  name       :string
+#  number     :string
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
+require 'test_helper'
+
+class ClassRoomTest < ActiveSupport::TestCase
+  # test "the truth" do
+  #   assert true
+  # end
+end
